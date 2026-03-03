@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nome": "Notebook",
+    "marca": "Dell",
+    "preco": 4500,
+    "estoque": 10,
+    "categoria": "Informática"
+  },
+  {
+    "id": 2,
+    "nome": "Smartphone",
+    "marca": "Samsung",
+    "preco": 2500,
+    "estoque": 15,
+    "categoria": "Eletrônicos"
+  },
+  {
+    "id": 3,
+    "nome": "Teclado",
+    "marca": "Logitech",
+    "preco": 200,
+    "estoque": 30,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 4,
+    "nome": "Mouse",
+    "marca": "Razer",
+    "preco": 350,
+    "estoque": 20,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 5,
+    "nome": "Monitor",
+    "marca": "LG",
+    "preco": 1200,
+    "estoque": 8,
+    "categoria": "Informática"
+  }
+]
