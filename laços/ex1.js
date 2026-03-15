@@ -1,8 +1,11 @@
-// Utilize a estrutura while para exibir os números de 1 até 5 no console.
+// Utilize a estrutura while para exibir o número 5 no console.
 
+export function lac_ex1(){
 let contador = 1;
 
-while (contador <= 5) {
-  console.log("Número:", contador);
+while (contador <= 4) {
   contador++;
+  
+}
+return contador
 }

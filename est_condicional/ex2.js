@@ -1,8 +1,9 @@
 //Exercício de if composto: Aprove ou Reprove um aluno caso a nota dele seja boa ou ruim.
-
-let nota = 2;
+export function est_ex2(){
+let nota = 7;
 if (nota >= 6){
-    console.log("A nota foi:",nota,"= Aprovado")
+    return("A nota foi "+ nota +" e ele foi aprovado")
 }else{
-    console.log("A nota foi:",nota,"Reprovado")
+    return("A nota foi "+ nota +" e ele foi reprovado")
+}
 }

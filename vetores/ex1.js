@@ -1,11 +1,14 @@
 // Busque alunos que estão no vetor e exiba no console.
 
-let alunos = ["Ana", "Carlos", "Guilherme", "Julia"];
+export function vetor_ex1(){
 
-let nomeBuscado = "Guilherme";
+let alunos = ["Ana", "Carlos", "Guilherme", "Julia"];
+let nomeBuscado = "Safado";
 
 if (alunos.includes(nomeBuscado)) {
-  console.log("Aluno encontrado");
+  return "Aluno encontrado";
 } else {
-  console.log("Aluno não encontrado");
+  return "Aluno não encontrado";
+}
+
 }

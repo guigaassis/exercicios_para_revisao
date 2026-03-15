@@ -1,17 +1,22 @@
 // Crie um sistema simples de menu de opções.
 
-let opcao = 3;
+export function sw(){
+let opcao = 1;
+let resultado = "";
 
 switch (opcao) {
   case 1:
-    console.log("Cadastrar usuário");
+    resultado = "Cadastrar usuário";
     break;
   case 2:
-    console.log("Listar usuários");
+    resultado = "Listar usuários";
     break;
   case 3:
-    console.log("Excluir usuário");
+    resultado = "Excluir usuário";
     break;
   default:
-    console.log("Opção inválida");
+    resultado = "Opção inválida";
+}
+
+return resultado;
 }

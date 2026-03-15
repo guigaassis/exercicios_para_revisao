@@ -1,10 +1,14 @@
 //Exercício de operador ou: Determine se a pessoa vai receber desconto.
-let clientePadrao = false;
-let temDesconto = false;
-let clienteVIP = true;
+export function op_ou(){
 
-if (temDesconto || clienteVIP ){
-    console.log("Recebe desconto");
-}else {
-    console.log("Não recebe Desconto")
+
+let temDesconto = true;
+let clienteVIP = false;
+
+if (temDesconto || clienteVIP){
+    return "Recebe desconto";
+}else{
+    return "Não recebe desconto";
+}
+
 }
