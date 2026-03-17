@@ -1,18 +1,26 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-export function verProdutos(req, res){
-
-const caminho = path.join(__dirname, "produtos.json");
-
-const produtos = JSON.parse(
-    fs.readFileSync(caminho, "utf-8")
-);
-
-res.json(produtos);
-
-}
+function produtos() {
+     
+    const produtos = [
+        {id_produto: 0,
+         nomeProduto:"Sabão em pó",
+         precoProduto: 22.50
+    },  {id_produto: 1,
+         nomeProduto:"Detergente",
+         precoProduto: 6.99
+    },  {id_produto: 2,
+         nomeProduto:"Amaciante Grande",
+         precoProduto: 39.50
+    },  {id_produto: 3,
+         nomeProduto:"Sabonete",
+         precoProduto: 2.50
+    },  {id_produto: 4,
+         nomeProduto:"Pasta de dente",
+         precoProduto: 5.50
+    } ]
+    
+    return(produtos)
+    }
+    
+    export {produtos}
+   
