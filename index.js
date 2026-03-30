@@ -22,6 +22,7 @@ import { router_opr } from './routers/opr_router.js'
 
 const app = express()
 app.use(express.Router())
+app.use(express.json());
 
 //variaveis
 app.use('/', router_variaveis) 

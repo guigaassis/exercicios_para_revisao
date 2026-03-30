@@ -9,13 +9,19 @@ import { opa7 } from '../op_aritméticos/ex7.js'
 import express from 'express'
 const router_opa = express()
 
-router_opa.get('/opa1', (req,res) => {
-    let resp = opa1()
-    res.send(`${resp}`)
+router_opa.get('/opa1/:produto1/:produto2', (req,res) => {
+    let {produto1, produto2} = req.params
+    let resposta = {
+        resultado: `${opa1(Number(produto1), Number(produto2))}`
+    }
+    res.json(resposta)
 })
-router_opa.get('/opa2', (req,res) => {
-    let resp = opa2()
-    res.send(`${resp}`)
+router_opa.get('/opa2/:saldo/:gasto', (req,res) => {
+    let {saldo, gasto} = req.params
+    let resposta = {
+        resultado: `${opa1(Number(saldo), Number(gasto))}`
+    }
+    res.json(resposta)
 })
 router_opa.get('/opa3', (req,res) => {
     let resp = opa3()

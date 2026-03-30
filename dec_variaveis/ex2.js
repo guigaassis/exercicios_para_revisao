@@ -1,8 +1,6 @@
 //Declare duas variáveis númericas e exiba a soma no console
 
-export function var_ex2(){
-var numero1 = 10;
-var numero2 = 2;
+export function var_ex2(numero1, numero2){
 
 let soma = numero1 + numero2;
 return soma 
