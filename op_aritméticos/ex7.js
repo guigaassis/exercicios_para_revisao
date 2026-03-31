@@ -1,6 +1,5 @@
 // Calcule a raiz quadrada de 144.
-export function opa7(){
-let numero = 144;
+export function opa7(numero){
 
 let raiz = Math.sqrt(numero);
 

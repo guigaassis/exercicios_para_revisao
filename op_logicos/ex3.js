@@ -1,8 +1,8 @@
 //Exercício de operador not: Determine se a pessoa vai sair de casa num dia chuvoso.
 
-export function op_not(){
+export function op_not(chuva){
 
-let chuva = true;
+
 
 if (!chuva){
     return "Pode sair fiot";

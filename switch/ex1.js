@@ -1,7 +1,7 @@
 // Crie um sistema simples de menu de opções.
 
-export function sw(){
-let opcao = 1;
+export function sw(opcao){
+
 let resultado = "";
 
 switch (opcao) {

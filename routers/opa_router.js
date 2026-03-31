@@ -19,29 +19,44 @@ router_opa.get('/opa1/:produto1/:produto2', (req,res) => {
 router_opa.get('/opa2/:saldo/:gasto', (req,res) => {
     let {saldo, gasto} = req.params
     let resposta = {
-        resultado: `${opa1(Number(saldo), Number(gasto))}`
+        resultado: `${opa2(Number(saldo), Number(gasto))}`
     }
     res.json(resposta)
 })
-router_opa.get('/opa3', (req,res) => {
-    let resp = opa3()
-    res.send(`${resp}`)
+router_opa.get('/opa3/:preco/:quantidade', (req,res) => {
+    let {preco, quantidade} = req.params
+    let resposta = {
+        resultado: `${opa3(Number(preco), (Number(quantidade)))}`
+    }
+    res.json(resposta)
 })
-router_opa.get('/opa4', (req,res) => {
-    let resp = opa4()
-    res.send(`${resp}`)
+router_opa.get('/opa4/', (req,res) => {
+    let {conta, pessoas} = req.query
+    let resposta = {
+        resultado: `${opa4 (Number(conta), Number(pessoas))}`
+    }
+    res.json(resposta)
 })
-router_opa.get('/opa5', (req,res) => {
-    let resp = opa5()
-    res.send(`${resp}`)
+router_opa.get('/opa5/:numero', (req,res) => {
+   let {numero} = req.params
+   let resposta = {
+    resultado: `${opa5(Number(numero))}`
+   }
+   res.json(resposta)
 })
-router_opa.get('/opa6', (req,res) => {
-    let resp = opa6()
-    res.send(`${resp}`)
+router_opa.get('/opa6/:base/:expoente', (req,res) => {
+   let {base, expoente} = req.params
+   let resposta = {
+    resultado: `${opa6(Number(base), Number(expoente))}`
+   }
+   res.json(resposta)
 })
-router_opa.get('/opa7', (req,res) => {
-    let resp = opa7()
-    res.send(`${resp}`)
+router_opa.get('/opa7/:numero', (req,res) => {
+    let {numero} = req.params
+    let resposta = {
+     resultado: `${opa7(Number(numero))}`
+    }
+    res.json(resposta)
 })
 
 

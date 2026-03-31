@@ -1,9 +1,9 @@
 // Determine se a pessoa pode dirigir
 
-export function opr4(){
+export function opr4(idade){
 
-let idade = 15;
 
-return "Pode dirigir? " + (idade <= 17);
+
+return "Pode dirigir? " + (idade >= 18);
 
 }

@@ -8,29 +8,47 @@ import { opr6 } from '../op_relacionais/ex6.js'
 import express from 'express'
 const router_opr = express()
 
-router_opr.get('/opr1', (req,res) => {
-    let resp = opr1()
-    res.send(`${resp}`)
+router_opr.get('/opr1/:idade', (req,res) => {
+   let {idade} = req.params
+   let resposta = {
+    resultado: `${opr1(Number(idade))}`
+   }
+   res.json(resposta)
 })
-router_opr.get('/opr2', (req,res) => {
-    let resp = opr2()
-    res.send(`${resp}`)
+router_opr.get('/opr2/:temperatura', (req,res) => {
+    let {temperatura} = req.params
+    let resposta = {
+     resultado: `${opr2(Number(temperatura))}`
+    }
+    res.json(resposta)
 })
-router_opr.get('/opr3', (req,res) => {
-    let resp = opr3()
-    res.send(`${resp}`)
+router_opr.get('/opr3/:nota', (req,res) => {
+   let {nota} = req.params
+   let resposta = {
+    resultado: `${opr3(Number(nota))}`
+   }
+   res.json(resposta)
 })
-router_opr.get('/opr4', (req,res) => {
-    let resp = opr4()
-    res.send(`${resp}`)
+router_opr.get('/opr4/:idade', (req,res) => {
+    let {idade} = req.params
+   let resposta = {
+    resultado: `${opr4(Number(idade))}`
+   }
+   res.json(resposta)
 })
-router_opr.get('/opr5', (req,res) => {
-    let resp = opr5()
-    res.send(`${resp}`)
+router_opr.get('/opr5/:senha', (req,res) => {
+    let {senha} = req.params
+    let resposta = {
+     resultado: `${opr5(String(senha))}`
+    }
+    res.json(resposta)
 })
-router_opr.get('/opr6', (req,res) => {
-    let resp = opr6()
-    res.send(`${resp}`)
+router_opr.get('/opr6/:numero', (req,res) => {
+    let {numero} = req.params
+   let resposta = {
+    resultado: `${opr6(Number(numero))}`
+   }
+   res.json(resposta)
 })
 
 export {router_opr}

@@ -1,9 +1,5 @@
 //Exercício de operador ou: Determine se a pessoa vai receber desconto.
-export function op_ou(){
-
-
-let temDesconto = true;
-let clienteVIP = false;
+export function op_ou(temDesconto, clienteVIP){
 
 if (temDesconto || clienteVIP){
     return "Recebe desconto";
