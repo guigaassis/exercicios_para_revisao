@@ -2,6 +2,6 @@
 
 export function est_ex1(idade){
 if (idade >= 18){
-    return idade + " anos" + " e ele é maior de idade";
+    return "Você é Maior de idade";
 }
 }

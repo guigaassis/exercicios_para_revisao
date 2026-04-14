@@ -2,6 +2,6 @@
 
 export function opr5(senha){
 
-return "Senha correta? " + (senha === "1234");
+return "Senha correta? " + (senha === 1234);
 
 }
